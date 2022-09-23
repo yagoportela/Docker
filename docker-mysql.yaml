@@ -1,0 +1,54 @@
+version: '3.5'
+
+services:
+  mysqlapiproduct:
+    container_name: "mysqlapiproduct"
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "product_db"
+      DB_PATH_HOST: /tmp/mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/nads/Desenvolvimento/Projetos/Docker/Volumes/MySql:/var/lib/mysql:rw,delegated
+    networks:
+      - mysql-compose-network
+
+  phpmyadmin:
+    depends_on:
+      - mysqlapiproduct
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8082:80
+    environment:
+      PMA_HOST: mysqlapiproduct
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - mysql-compose-network
+
+  adminerapiproduct:
+    container_name: "adminerapiproduct"
+    image: adminer
+    restart: always
+    depends_on: 
+      - mysqlapiproduct
+    ports:
+      - 8080:8080
+    networks:
+      - mysql-compose-network
+
+networks:
+  mysql-compose-network:
+    driver: bridge
+
+## Link: http://localhost:8080/
+## Servidor: mysqlapiproduct
+## Usuário: root
+## Senha: root
+## Base de dados: product_db
+
+## Link: http://localhost:8082
+## Utilizador: root
+## Palavra-passe: root
