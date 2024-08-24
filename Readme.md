@@ -87,15 +87,19 @@ Usuário: root
 Senha: root
 Base de dados: product_db
 ```
-# Postgres
+# MongoDB
 
-### **`Acessos Postgres`**
+### **`Acessos MongoDB`**
 
 mongo-express
 
 ```bash
 Link: http://localhost:8081
 ```
+
+# Opensearch
+
+### **`Acessos opensearch`**
 
 opensearch-dashboards
 
