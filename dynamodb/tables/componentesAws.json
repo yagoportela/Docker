@@ -1,0 +1,19 @@
+{
+    "TableName": "ComponentesAws",
+    "KeySchema": [
+        {
+            "AttributeName": "Servico",
+            "KeyType": "HASH"
+        }
+    ],
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "Servico",
+            "AttributeType": "S"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 5,
+        "WriteCapacityUnits": 5
+    }
+}

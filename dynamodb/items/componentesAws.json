@@ -1,0 +1,372 @@
+[
+    {
+        "Servico": {
+            "S": "EC2"
+        },
+        "NomeCompleto": {
+            "S": "Elastic Compute Cloud"
+        },
+        "Categoria": {
+            "S": "Compute"
+        },
+        "Dificuldade": {
+            "S": "Intermediário"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Serviço fundamental para computação na nuvem"
+        },
+        "TempoEstudo": {
+            "S": "2-3 horas"
+        },
+        "PesoExame": {
+            "S": "15%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Tipos de Instâncias"
+                },
+                {
+                    "S": "Auto Scaling"
+                },
+                {
+                    "S": "Load Balancer"
+                },
+                {
+                    "S": "Spot Instances"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Foque em cenários de alta disponibilidade"
+                },
+                {
+                    "S": "Entenda diferenças entre tipos de instâncias"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "S3"
+        },
+        "NomeCompleto": {
+            "S": "Simple Storage Service"
+        },
+        "Categoria": {
+            "S": "Storage"
+        },
+        "Dificuldade": {
+            "S": "Básico"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Serviço de armazenamento de objetos"
+        },
+        "TempoEstudo": {
+            "S": "1-2 horas"
+        },
+        "PesoExame": {
+            "S": "12%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Storage Classes"
+                },
+                {
+                    "S": "Lifecycle Policies"
+                },
+                {
+                    "S": "Cross-Region Replication"
+                },
+                {
+                    "S": "Versioning"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Memorize as classes de storage"
+                },
+                {
+                    "S": "Entenda quando usar cada tipo"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "RDS"
+        },
+        "NomeCompleto": {
+            "S": "Relational Database Service"
+        },
+        "Categoria": {
+            "S": "Database"
+        },
+        "Dificuldade": {
+            "S": "Intermediário"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Serviço gerenciado para bancos relacionais"
+        },
+        "TempoEstudo": {
+            "S": "2-3 horas"
+        },
+        "PesoExame": {
+            "S": "10%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Multi-AZ Deployment"
+                },
+                {
+                    "S": "Read Replicas"
+                },
+                {
+                    "S": "Automated Backups"
+                },
+                {
+                    "S": "Encryption"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Entenda diferenças entre Multi-AZ e Read Replicas"
+                },
+                {
+                    "S": "Foque em cenários de DR"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "VPC"
+        },
+        "NomeCompleto": {
+            "S": "Virtual Private Cloud"
+        },
+        "Categoria": {
+            "S": "Networking"
+        },
+        "Dificuldade": {
+            "S": "Avançado"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Fundamental para networking na AWS"
+        },
+        "TempoEstudo": {
+            "S": "3-4 horas"
+        },
+        "PesoExame": {
+            "S": "18%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Subnets"
+                },
+                {
+                    "S": "Route Tables"
+                },
+                {
+                    "S": "Security Groups"
+                },
+                {
+                    "S": "NACLs"
+                },
+                {
+                    "S": "VPC Peering"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Desenhe diagramas de VPC"
+                },
+                {
+                    "S": "Pratique cenários complexos"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "Lambda"
+        },
+        "NomeCompleto": {
+            "S": "Serverless Computing"
+        },
+        "Categoria": {
+            "S": "Serverless"
+        },
+        "Dificuldade": {
+            "S": "Intermediário"
+        },
+        "Importancia": {
+            "S": "Média"
+        },
+        "Descricao": {
+            "S": "Computação serverless"
+        },
+        "TempoEstudo": {
+            "S": "2-3 horas"
+        },
+        "PesoExame": {
+            "S": "8%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Triggers"
+                },
+                {
+                    "S": "Cold Starts"
+                },
+                {
+                    "S": "Concurrency"
+                },
+                {
+                    "S": "Environment Variables"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Entenda quando usar Lambda vs EC2"
+                },
+                {
+                    "S": "Foque em integrações"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "IAM"
+        },
+        "NomeCompleto": {
+            "S": "Identity and Access Management"
+        },
+        "Categoria": {
+            "S": "Security"
+        },
+        "Dificuldade": {
+            "S": "Intermediário"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Controle de acesso na AWS"
+        },
+        "TempoEstudo": {
+            "S": "2-3 horas"
+        },
+        "PesoExame": {
+            "S": "12%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Policies"
+                },
+                {
+                    "S": "Roles"
+                },
+                {
+                    "S": "Users"
+                },
+                {
+                    "S": "Groups"
+                },
+                {
+                    "S": "Cross-Account Access"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Princípio do menor privilégio"
+                },
+                {
+                    "S": "Entenda trust relationships"
+                }
+            ]
+        }
+    },
+    {
+        "Servico": {
+            "S": "DynamoDB"
+        },
+        "NomeCompleto": {
+            "S": "NoSQL Database Service"
+        },
+        "Categoria": {
+            "S": "Database"
+        },
+        "Dificuldade": {
+            "S": "Intermediário"
+        },
+        "Importancia": {
+            "S": "Alta"
+        },
+        "Descricao": {
+            "S": "Banco de dados NoSQL gerenciado"
+        },
+        "TempoEstudo": {
+            "S": "2-3 horas"
+        },
+        "PesoExame": {
+            "S": "8%"
+        },
+        "Features": {
+            "L": [
+                {
+                    "S": "Partition Key"
+                },
+                {
+                    "S": "Sort Key"
+                },
+                {
+                    "S": "Global Secondary Index"
+                },
+                {
+                    "S": "Streams"
+                }
+            ]
+        },
+        "Dicas": {
+            "L": [
+                {
+                    "S": "Entenda limites de throughput"
+                },
+                {
+                    "S": "Pratique modelagem de tabelas"
+                }
+            ]
+        }
+    }
+]
